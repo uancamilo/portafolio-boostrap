@@ -10,7 +10,7 @@
 			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 			crossorigin="anonymous"
 		/>
-        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<header>
@@ -18,7 +18,7 @@
 				<div class="container">
 					<a class="navbar-brand" href="#">
 						<img
-                            class="logo"
+							class="logo"
 							src="/images/portfolio.png"
 							alt="Bootstrap"
 							width="30"
@@ -30,7 +30,139 @@
 		</header>
 		<main class="container">
 			<h1 class="fs-1">Portafolio</h1>
+
+			<!-- Carrusel -->
+			<div id="carouselExample" class="carousel slide">
+				<button class="agendamiento">¡Agenda tu cita hoy!</button>
+
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="images/carrusel1.webp" class="d-block w-100" alt="..." />
+					</div>
+					<div class="carousel-item">
+						<img src="images/carrusel2.jpg" class="d-block w-100" alt="..." />
+					</div>
+					<div class="carousel-item">
+						<img src="images/carrusel3.jpg" class="d-block w-100" alt="..." />
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExample"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExample"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<!-- Fin del carrusel -->
+
+			<!-- Tarjetas -->
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col">
+						<h3 class="titulo-servicios">Nuestros Servicios</h3>
+						<p class="texto-servicios">
+							¡Conoce aquí las soluciones virtuales que tenemos especialmente
+							para ti!
+						</p>
+						<img src="images/sick.jpg" alt="enfermo" class="img-fluid" />
+					</div>
+					<div class="col">
+						<p class="titulo-tarjeta">Citas médicas</p>
+						<img src="images/doctor.jpg" alt="doctor" class="img-fluid" />
+					</div>
+					<div class="col">
+						<p class="titulo-tarjeta">Solicitud de medicamentos</p>
+						<img src="images/med.jpg" alt="medicamentos" class="img-fluid" />
+					</div>
+				</div>
+			</div>
+			<!-- Fin de Tarjetas -->
 		</main>
+
+		<footer class="mt-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 mb-3 mb-sm-0">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Sede Envigado</h5>
+								<p class="card-text">
+									Dirección: Carrera 20 # 2 sur - 185 - Teléfono: (574) 326 91
+									00
+								</p>
+								<a href="#" class="btn btn-primary">Ir a</a>
+								<div class="map">
+									<div class="gmap_canvas">
+										<iframe
+											width="100%"
+											height="300"
+											id="gmap_canvas"
+											src="https://maps.google.com/maps?q=envigado+hospital+manuel+uribe&t=&z=13&ie=UTF8&iwloc=&output=embed"
+											frameborder="0"
+											scrolling="no"
+											marginheight="0"
+											marginwidth="0"
+										></iframe>
+									</div>
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Libero vero veritatis laboriosam necessitatibus nesciunt
+									nobis? Illo saepe voluptatibus explicabo! Ipsa nisi reiciendis
+									ex voluptatem provident.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Sede Medellín</h5>
+								<p class="card-text">
+									Dirección: calle 48 # 35 - 25 - Teléfono: (579) 541 23 58
+								</p>
+								<a href="#" class="btn btn-primary">Ir a</a>
+								<div class="map">
+									<div class="gmap_canvas">
+										<iframe
+											width="100%"
+											height="300"
+											id="gmap_canvas"
+											src="https://maps.google.com/maps?q=medellin&t=&z=13&ie=UTF8&iwloc=&output=embed"
+											frameborder="0"
+											scrolling="no"
+											marginheight="0"
+											marginwidth="0"
+										></iframe>
+									</div>
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Libero vero veritatis laboriosam necessitatibus nesciunt
+									nobis? Illo saepe voluptatibus explicabo! Ipsa nisi reiciendis
+									ex voluptatem provident.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Bootstrap Javascript -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
